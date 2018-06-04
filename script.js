@@ -17,13 +17,13 @@ var movies = [
         desc: 'Komedia romantyczna',
         img: 'images/to_wlasnie_milosc.jpg'
     },
-      {
+    {
         id: 4,
         title: 'Władca pierścieni',
         desc: 'Filmowa trylogia wg powieści Tolkiena',
         img: 'images/wladca.jpg'
     },
-      {
+    {
         id: 5,
         title: 'Pulp Fiction',
         desc: 'Przemoc i odkupienie w opowieści o dwóch płatnych mordercach pracujących na zlecenie mafii',
@@ -35,7 +35,7 @@ var moviesElements = movies.map(function (movie) {
     return React.createElement('li', { key: movie.id },
         React.createElement('h2', {}, movie.title),
         React.createElement('p', {}, movie.desc),
-        React.createElement('img', {src:movie.img})
+        React.createElement('img', { src: movie.img })
     );
 });
 
